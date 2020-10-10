@@ -1,2 +1,2 @@
 # Kotlin_practice
-Various functional exercises for cotlin programming.
+Various functional exercises for Kotlin programming.
