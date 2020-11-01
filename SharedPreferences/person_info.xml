@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="name">lim</string>
+    <boolean name="man" value="true" />
+    <int name="age" value="23" />
+</map>
