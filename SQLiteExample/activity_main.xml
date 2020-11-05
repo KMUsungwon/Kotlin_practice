@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름 입력"
+        android:selectAllOnFocus="true"/>
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="나이 입력"
+        android:inputType="number"
+        android:selectAllOnFocus="true"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="삽입"/>
+            <Button
+                android:id="@+id/btnSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="전체 검색"/>
+            <Button
+                android:id="@+id/btnSelectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="이름 검색"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnUpdateAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="나이 갱신"/>
+            <Button
+                android:id="@+id/btnDeleteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="이름 삭제"/>
+            <Button
+                android:id="@+id/btnDeleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mOnClick"
+                android:text="전체 삭제"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:padding="44dp">
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+    </ScrollView>
+
+</LinearLayout>
